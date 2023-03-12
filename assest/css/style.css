@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    ---body-color: #000836;
+    ---nav-list-li-a-color: #ffffff;
+    ---card-buttons-color: #DF6100;
+    ---footer-background-color: #000F43;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(---body-color);
+}
+
+.header-head-container {
+    background: var(---body-color);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.header-logo {
+    max-width: 222px !important;
+}
+
+.header-logo-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+}
+
+.header-logo-nav-container .nav-list {
+    display: flex;
+    gap: 81px;
+}
+
+.nav-list li a {
+    color: var(---nav-list-li-a-color);
+    font-family: "montserrat";
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.nav-list li a:hover {
+    color: var(---card-buttons-color);
+    transition: ease .5s;
+}
+
+.main-top-description {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.main-top-description h1 {
+    font-size: 58px;
+    color: var(---nav-list-li-a-color);
+    font-family: "montserrat";
+    font-size: 101px;
+    font-weight: 400;
+    line-height: 101px;
+    color: #ffffff;
+}
+
+.main-top-description p {
+    color: var(---nav-list-li-a-color);
+    font-family: "montserrat";
+    font-size: 39px;
+    font-weight: 500;
+    line-height: 39px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(277px, 1fr));
+    gap: 24px;
+    max-width: 1267px;
+
+    margin: 50px auto
+}
+
+.grid-card {
+    min-width: 277px;
+    background: var(---nav-list-li-a-color);
+    padding: 10px;
+    border-radius: 9px;
+    overflow: hidden;
+
+
+}
+
+.grid-card img {
+    width: 100%;
+    transition: all .5s;
+    height: 300px;
+    object-fit: cover;
+
+
+
+}
+.grid-card-contents img:hover{
+    transform: scale(1.1);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17px;
+
+}
+
+
+.grid-card-contents button {
+    padding: 15px 40px;
+    border-radius: 17px;
+    color: var(---nav-list-li-a-color);
+    background: var(---card-buttons-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    font-family: "montserrat";
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 21px;
+    gap: 20px;
+
+}
+
+.grid-card-contents button:hover {
+    color: var(---card-buttons-color);
+    background: var(---nav-list-li-a-color);
+    border: 1px solid var(---card-buttons-color);
+    transition: all .5s;
+}
+
+.buttons-container i:hover {
+    color: var(---card-buttons-color);
+}
+
+footer {
+    background: var(---footer-background-color);
+    width: 100%;
+}
+
+.footer-nav {
+    max-width: 1266px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 30px; */
+}
+
+.footer-list li {
+    margin-top: 16px;
+}
+
+.footer-list li a {
+    font-family: "montserrat";
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    color: var(---nav-list-li-a-color);
+}
+
+.footer-list li a:hover {
+    color: var(---card-buttons-color);
+    transition: ease .5s;
+}
