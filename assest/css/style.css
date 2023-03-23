@@ -1120,6 +1120,22 @@ footer {
 
     }
 
+
+
+
+
+    .mm li {
+        width: 22px !important;
+        height: 22px !important;
+        font-size: 12px;
+        font-weight: 200;
+        line-height: 12px;
+        color: #00064a;
+    }
+
+
+    .mm-li-active {}
+
 }
 
 
@@ -1679,6 +1695,19 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 .mm-li-active {
     padding: 26px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .mm-li-active {
+        padding: 16px !important;
+    }
+    .mm {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
 }
