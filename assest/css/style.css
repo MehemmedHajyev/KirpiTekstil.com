@@ -155,7 +155,7 @@ header {
 }
 
 .footer-list li {
-    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .footer-list li a {
@@ -389,11 +389,10 @@ header {
 }
 
 .buttons-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 17px;
-    width: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .products-link-container {
@@ -449,12 +448,10 @@ header {
     gap: 20px;
     border-radius: 7px;
     width: 100%;
+    border-radius: 50px;
 }
 
-.isci-card-contents img {
-    width: 100%;
-    height: 70%;
-}
+
 
 
 
@@ -524,7 +521,7 @@ footer {
     font-family: "montserrat";
     font-size: 25px;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 64px;
     color: #f2f2f2;
 }
 
@@ -534,7 +531,7 @@ footer {
     font-family: "montserrat";
     font-size: 25px;
     font-weight: 500;
-    line-height: 25px;
+    line-height: 50px;
     color: #f2f2f2;
 }
 
@@ -654,7 +651,6 @@ footer {
     padding: 10px 30px;
     border-radius: 33px;
     background: #ffffff;
-    margin-bottom: 30px;
     gap: 10px;
 
 }
@@ -928,14 +924,22 @@ footer {
     gap: 30px;
     max-width: 1170px;
     margin-top: 50px;
-    margin-bottom: 2x0px;
+    margin-bottom: 20px;
 
 }
 
 .isci-car {
     min-width: 258px;
-    background: white;
+    background: rgb(199, 195, 195);
     padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.isci-card-contents img {
+    width: 100%;
 }
 
 .two-section-img,
@@ -989,7 +993,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 500px;
+    padding-top: 290px;
 }
 
 
@@ -1025,7 +1029,7 @@ footer {
     }
 
     .daha-cox {
-        margin-top: 30px;
+        margin-top: 10px;
         padding-bottom: 50px;
         display: flex;
         align-items: center;
@@ -1133,8 +1137,11 @@ footer {
         color: #00064a;
     }
 
+    .home-pages-footbol-formalari h2 {
+        font-size: 20px;
+    }
 
-    .mm-li-active {}
+
 
 }
 
@@ -1263,7 +1270,8 @@ footer {
 
 
     .abisolid-log {
-        padding-top: 300px;
+        padding-top: 100px;
+        
     }
 }
 
@@ -1631,7 +1639,10 @@ footer {
 
 
     .abisolid-log {
-        padding-top: 150px;
+        padding-top: 50px;
+    }
+    .abisolid-log img{
+        width: 100px;
     }
 
     .about-header {
@@ -1708,6 +1719,13 @@ footer {
         display: flex;
         justify-content: center;
         gap: 20px;
+    }
+    
+    .home-pages-footbol-formalari h2 {
+    
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
