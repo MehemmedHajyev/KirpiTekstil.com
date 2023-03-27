@@ -1900,6 +1900,17 @@ footer {
 
         margin-bottom: -36px !important;
     }
+    .partniyorlar-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 28px;
+    }
+
+    .partniyor-card {
+        min-width: 140px;
+        border-radius: 18px;
+        background: var(---nav-list-li-a-color)
+    }
 }
 
 
