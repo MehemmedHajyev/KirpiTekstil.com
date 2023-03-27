@@ -315,7 +315,14 @@ header {
 .header-bottom-content {
     text-align: center;
     margin-bottom: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
+.contactUs-header {
+    position: relative;
 }
 
 .header-bottom-content h1 {
@@ -716,7 +723,7 @@ footer {
 }
 
 .header-bottom-content {
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .cap-header-text {
@@ -1594,8 +1601,6 @@ footer {
     .header-bottom-content p {
         font-family: "montserrat";
         font-size: 20px;
-        font-weight: 500;
-        line-height: 39px;
         color: #ffffff;
         max-width: 746px;
         margin-right: auto;
@@ -1753,15 +1758,27 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    
 
-.main-inner-container h1 {
-    font-family: "montserrat";
-    font-size: 40px;
-    font-weight: 400;
-    color: var(---nav-list-li-a-color);
-    margin-top: 100px;
-}
+
+    .main-inner-container h1 {
+        font-family: "montserrat";
+        font-size: 40px;
+        font-weight: 400;
+        color: var(---nav-list-li-a-color);
+        margin-top: 100px;
+    }
+
+    .header-bottom-content {
+        top:130px;
+    }
+    .contactUs-header{
+        height: 40vh;
+    }
+
+    .contancud-text {
+        line-height: 50px;
+        color: var(---nav-list-li-a-color);
+    }
 
 
 }
@@ -1900,6 +1917,7 @@ footer {
 
         margin-bottom: -36px !important;
     }
+
     .partniyorlar-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
