@@ -59,7 +59,12 @@ header {
     display: flex;
     align-items: center;
     gap: 81px;
-    /* transition: all .5s ease-in-out; */
+    z-index: 9999999;
+}
+
+.sub-menu,
+.sub-sub-menu {
+    z-index: 999999999999;
 }
 
 .products-link-container {
@@ -321,7 +326,13 @@ header {
     right: 0;
 }
 
-.contactUs-header {
+.header-footbol-content {
+    position: absolute;
+    left: 80px;
+}
+
+.contactUs-header,
+.home-size-for {
     position: relative;
 }
 
@@ -349,7 +360,7 @@ header {
 }
 
 .for-cap {
-    margin-top: 350px;
+    margin-top: 130px;
 }
 
 .for-cap h1 {
@@ -1186,12 +1197,12 @@ footer {
 
 @media only screen and (max-width: 405px) {
     .isci-container {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
         gap: 30px;
     }
 
     .isci-car {
-        min-width: 100px;
+        min-width: 140px;
         background: white;
         padding: 30px;
     }
@@ -1241,6 +1252,7 @@ footer {
     .home-size-for {
         height: 40vh !important;
     }
+
 
     .top-img {
         margin-bottom: -100px;
@@ -1302,9 +1314,29 @@ footer {
     }
 
 
-    /* .top-img img {
-        margin-top: 80px;
-    } */
+    .for-val {
+        margin-top: 50px !important;
+    }
+    .header-footbol-content {
+        left: 40px;
+    }
+
+
+    .for-val h1 {
+        font-size: 41px;
+        color: var(---nav-list-li-a-color);
+        margin-bottom: 0px;
+        line-height: 41px;
+
+    }
+
+    .for-val p {
+        font-size: 19px;
+        font-weight: 400;
+        line-height: 19px;
+        color: var(---nav-list-li-a-color);
+    }
+
 }
 
 
@@ -1699,6 +1731,10 @@ footer {
         margin-bottom: -56px !important;
     }
 
+    .footbol-formalari {
+        height: 50vh;
+    }
+
 
 
 }
@@ -1769,9 +1805,10 @@ footer {
     }
 
     .header-bottom-content {
-        top:130px;
+        top: 130px;
     }
-    .contactUs-header{
+
+    .contactUs-header {
         height: 40vh;
     }
 
@@ -1958,6 +1995,19 @@ footer {
     .df-jk {
         display: block;
         line-height: 40px;
+    }
+
+    .submit-btnn {
+        display: flex;
+        float: none;
+        align-items: center;
+        /* justify-content: center; */
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .submit-btnn .btn {
+        width: 85%;
     }
 
 
