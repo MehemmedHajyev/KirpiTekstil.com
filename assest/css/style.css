@@ -60,6 +60,8 @@ header {
     align-items: center;
     gap: 81px;
     z-index: 9999999;
+    transition: all .5s !important;
+
 }
 
 .sub-menu,
@@ -69,7 +71,6 @@ header {
 
 .products-link-container {
     position: relative;
-    /* transition: all .5s ease-in-out; */
 
 }
 
@@ -316,10 +317,13 @@ header {
     display: none;
 }
 
+.header-bottom-content-for-about {
+    text-align: center;
+    padding-bottom: 50px
+}
 
 .header-bottom-content {
-    text-align: center;
-    margin-bottom: 50px;
+
     position: absolute;
     bottom: 0;
     left: 0;
@@ -789,13 +793,16 @@ footer {
 
 .card-for-profile-img {
     max-width: 170px;
-    margin-right: auto;
-    margin-left: auto;
-    height: 170px;
     border-radius: 50%;
     background: #00042E;
-
+    display: flex;
+    height: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .cap-card-content p {
     text-align: center;
@@ -807,8 +814,8 @@ footer {
 }
 
 .card-for-profile-img img {
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
     border-radius: 50%;
 }
 
@@ -1173,6 +1180,18 @@ footer {
 
 
 
+    .cap-card-content p {
+        text-align: center;
+        text-align: center;
+        font-family: "montserrat";
+        font-size: 14px;
+        line-height: 25px;
+        color: #00042e;
+    }
+
+
+
+
 }
 
 
@@ -1317,6 +1336,7 @@ footer {
     .for-val {
         margin-top: 50px !important;
     }
+
     .header-footbol-content {
         left: 40px;
     }
@@ -1586,11 +1606,17 @@ footer {
 
     .cap-header-text h3 {
         font-size: 41px;
+        padding-bottom: 20px;
+
     }
 
     .main-header-text p {
         font-size: 27px;
 
+    }
+
+    .cap-home {
+        height: 40vh;
     }
 
     .header-bottom-content p {
@@ -1609,6 +1635,8 @@ footer {
 
     .cap-header-text h3 {
         font-size: 31px;
+        padding-bottom: 10px;
+
     }
 }
 
@@ -1616,7 +1644,6 @@ footer {
 @media only screen and (max-width: 575px) {
     .header-bottom-content h1 {
         font-size: 39px;
-
     }
 
     .contancud-text {
@@ -1625,8 +1652,8 @@ footer {
 
     .cap-header-text h3 {
         font-size: 27px;
-        line-height: 40px;
-
+        line-height: 27px;
+        padding-bottom: 5px;
     }
 
 
@@ -1706,7 +1733,7 @@ footer {
         height: 40vh;
     }
 
-    .basket-header{
+    .basket-header {
         height: 40vh;
     }
 
@@ -1736,6 +1763,11 @@ footer {
 
     .footbol-formalari {
         height: 50vh;
+    }
+
+
+    .buttons-container button {
+        justify-content: center;
     }
 
 
@@ -1779,6 +1811,8 @@ footer {
 .mm-li-active {
     padding: 26px !important;
 }
+
+
 
 @media only screen and (max-width: 600px) {
     .mm-li-active {
