@@ -917,7 +917,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 30px;
 
 }
 
@@ -1029,11 +1029,10 @@ footer {
 
 
   .buttons-container button {
-    /* padding: 5px 5px; */
+    padding: 5px 5px;
     color: var(---nav-list-li-a-color);
     background: var(---card-buttons-color);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border: none;
     font-family: "montserrat";
