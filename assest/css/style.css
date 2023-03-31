@@ -1769,7 +1769,7 @@ footer {
   }
 
   .top-img img {
-    margin-top: 80px;
+    margin-top: -40px;  
   }
 }
 
@@ -2009,4 +2009,7 @@ footer {
     top: 110%;
     left: 0;
   }
+}
+.mehsul-size-for{
+  height: 10vh;
 }
