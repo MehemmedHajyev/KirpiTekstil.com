@@ -779,6 +779,7 @@ footer {
   max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
+  padding: 20px;
 }
 
 .about-description span {
