@@ -11,128 +11,131 @@
 
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assest/css/style.css" />
+  <link rel="stylesheet" href="assest/css/responsive.css">
   <title></title>
 </head>
 
 <body>
   <header class="home-size-for">
     <div class="header-head-container home-for" style="
-          background-image: url(assest/images/header-background/ana\ səhifə.png);
-          width: 100%;
-          height: 100vh;
-          background-repeat: no-repeat;
-          background-size: 100% 100%;
-          /* background-position: center; */
-        ">
+    background-image: url(assest/images/header-background/ana\ səhifə.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+     background-position: center;
+  ">
       <div class="header-content-container">
-        <div class="header-logo-container">
-          <img src="assest/images/Logo/Logo.png" alt="Logo" />
-        </div>
-
         <nav>
-          <input type="checkbox" id="check" class="check" />
+          <div class="navbar">
 
-          <input type="checkbox" id="close" class="check" />
+            <div class="logo"><a href="home.html"><img src="assest/images/Logo/Logo.png" alt=""></a></div>
+            <i class='bx bx-menu'></i>
 
-          <label for="check">
-            <div class="responsive-bars">
-              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="21" viewBox="34 23 29 21">
-                <g data-name="Group 807">
-                  <path
-                    d="M36.5 23h24a2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5h-24a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5z"
-                    fill="#fff" fill-rule="evenodd" data-name="Rectangle 358" />
-                  <path
-                    d="M36.5 31h24a2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5h-24a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5z"
-                    fill="#fff" fill-rule="evenodd" data-name="Rectangle 359" />
-                  <path
-                    d="M36.5 39h24a2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5h-24a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5z"
-                    fill="#fff" fill-rule="evenodd" data-name="Rectangle 360" />
-                </g>
-              </svg>
-            </div>
-          </label>
-
-          <ul class="nav-list">
-            <label for="check">
-              <div class="cls-btn">
-                <i class="fa-solid fa-xmark close-btnn"></i>
+            <div class="nav-links">
+              <div class="sidebar-logo">
+                <span class="logo-name">Kirpi Tekstil</span>
+                <i class='bx bx-x'></i>
               </div>
-            </label>
-            <li>
-              <a href="home.html">Ana səhifə </a>
-            </li>
-            <li class="products-link-container">
-              <a onclick="mehsuLnoRef(event)">Məhsullar
-                <i class="fa-sharp fa-solid fa-chevron-down"></i>
-                <ul class="sub-menu">
-                  <li class="sub-sub-parent sub-sub-menu-sports__link">
-                    <a href="futbol-formalari.html"> İdman geyimlər </a>
+              <ul class="links">
+                <li><a href="home.html">Ana səhifə</a></li>
+                <li>
+                  <a href="#">Məhsullar</a>
+                  <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                  <ul class="htmlCss-sub-menu sub-menu" style="width: 200px;">
+                    <li class="more">
 
-                    <ul class="sub-sub-menu sub-sub-menu-sports">
-                      <li>
-                        <a href="valibol-formalari.html">valibol-formalari</a>
-                      </li>
-                      <li><a href="basketbol.html">Futbol-Formalari</a></li>
-                    </ul>
-                  </li>
+                      <span><a href="#">İdman geyimlər</a>
+                        <i class='bx bxs-chevron-down arrow more-arrow'></i>
+                      </span>
+                      <ul class="more-sub-menu sub-menu">
+                        <li><a href="futbol-formalari.html">Futbol formaları</a></li>
+                        <li><a href="basketbol.html">Basketbol formaları</a></li>
+                        <li><a href="valibol-formalari.html">Voleybol formaları</a></li>
+                        <li><a href="">Sport dəst</a></li>
+                        <li><a href="">Yağmurluq</a></li>
+                        <li><a href="">Sublim Polo</a></li>
+                        <li><a href="">Kurtka</a></li>
+                      </ul>
+                    </li>
 
-                  <li class="sub-sub-parent sub-sub-menu-promo__link">
-                    <a href="valibol-formalari.html">Promo geyimləri</a>
-                    <ul class="sub-sub-menu sub-sub-menu-promo">
-                      <li>
-                        <a href="valibol-formalari.html">T shirts</a>
-                      </li>
-                      <li><a href="basketbol.html">Switer</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="valibol-formalari.html">işci geyimləri</a></li>
-                  <li>
-                    <a href="valibol-formalari.html">idman aksesuarları</a>
-                  </li>
-                  <li><a href="valibol-formalari.html">Çap xidmetleri</a></li>
-                  <li><a href="valibol-formalari.html">Kələğayılar</a></li>
-                </ul>
-              </a>
-            </li>
-            <li>
-              <a href="about.html">Haqqımızda </a>
-            </li>
-            <li>
-              <a href="contactUs.html ">Əlaqə </a>
-            </li>
-            <li>
-              <a href="partniyorlar.html">Partnyorlarımız </a>
-            </li>
-            <label for="close"> </label>
-          </ul>
-        </nav>
+                    <li class="more">
+                      <span><a href="#">Promo geyimləri</a>
+                        <i class='bx bxs-chevron-down arrow more-arrow2'></i>
+                      </span>
+                      <ul class="more-sub-menu2 sub-menu2">
+                        <li><a href="">T-Shirt</a></li>
+                        <li><a href="">Polo</a></li>
+                        <li><a href="">Switer</a></li>
+                        <li><a href="">Sport dəst</a></li>
+                        <li><a href="">Hoodie</a></li>
+                        <li><a href="">Sublim Polo</a></li>
+                        <li><a href="">Kepka</a></li>
+                      </ul>
+                    </li>
+
+
+
+
+
+
+
+                    <li><a href="">İşçi geyimləri</a></li>
+                    <li><a href="">İdman aksesuarları</a></li>
+                    <li><a href="">İşçi geyimləri</a></li>
+                    <li><a href="">Çap xidmətləri</a></li>
+                    <li><a href="#">Kələğayılar</a></li>
+
+
+
+
+
+
+
+                  </ul>
+                </li>
+                <li>
+                  <a href="about.html">Haqqımızda</a>
+                </li>
+                <li><a href="contactUs.html">Əlaqə</a></li>
+                <li><a href="partniyorlar.html">Partnyorlarımız</a></li>
+              </ul>
+            </div>
+
+          </div>
       </div>
-
-      <div class="home-media">
-        <ul class="home-media-list">
-          <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-          </li>
-        </ul>
-      </div>
+      </nav>
     </div>
+
+
+
+    <div class="home-media">
+      <ul class="home-media-list">
+        <li>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </li>
+      </ul>
+    </div>
+
+
   </header>
   <main>
 
 
     <section>
-      <div class="home-pages-footbol-formalari">
+      <div class="home-pages-footbol-formalari fr-for">
         <h2>FUTBOL FORMALARI</h2>
         <p>
           BAŞLIQ: Suspendisse nec mauris dictum, sodales nunc et, sodales ex.
@@ -146,7 +149,7 @@
         </p>
       </div>
 
-      <div class="two-section-img" style="
+      <div class="two-section-img  for-vol" style="
             background-image: url(assest/images/header-background/futbol.png);
             width: 100%;
             height: 100vh;
@@ -161,76 +164,6 @@
 
     <section class="one-section two">
       <div class="isci-container">
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
 
         <div class="isci-car">
           <div class="isci-card-contents">
@@ -420,78 +353,6 @@
         </div>
 
 
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
 
 
 
@@ -548,81 +409,6 @@
 
     <section class="one-section five">
       <div class="isci-container">
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-
         <div class="isci-car">
           <div class="isci-card-contents">
             <div class="memmo">
@@ -687,6 +473,7 @@
               <a href="mehsul-qiymeti.html">
                 <button>
                   Sifariş edin
+
 
                   <i class="fa-sharp fa-solid fa-cart-shopping"></i>
                 </button>
@@ -726,59 +513,7 @@
       </div>
 
       <div class="isci-container">
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-
+      
         <div class="isci-car">
           <div class="isci-card-contents">
             <div class="memmo">
@@ -850,24 +585,6 @@
           </div>
         </div>
 
-
-        <div class="isci-car">
-          <div class="isci-card-contents">
-            <div class="memmo">
-              <img src="assest/images/card-images/YFF003.png" alt="praduct-img" />
-            </div>
-            <div class="buttons-container">
-              <a href="mehsul-qiymeti.html">
-                <button>
-                  Sifariş edin
-
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-    
 
 
       </div>
@@ -912,7 +629,7 @@
             height: 100vh;
             background-repeat: no-repeat;
             background-position: center;
-            background-size: 100% auto;
+            background-size: 100% 100%;
           ">
         <div class="abisolid-log">
           <h2>
@@ -974,12 +691,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-  <script>
 
-    function mehsuLnoRef(event) {
-      event.preventDefault(event)
-    }
-  </script>
+  <script src="assest/js/script.js"></script>
 </body>
 
 </html>
