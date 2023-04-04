@@ -6,7 +6,7 @@ let searchBox = document.querySelector(".search-box .bx-search");
 
 // sidebar open close js code
 let navLinks = document.querySelector(".nav-links");
-let menuOpenBtn = document.querySelector(".navbar .bx-menu");
+let menuOpenBtn = document.querySelector(".bx-menu");
 let menuCloseBtn = document.querySelector(".nav-links .bx-x");
 menuOpenBtn.onclick = function () {
    navLinks.style.left = "0";
